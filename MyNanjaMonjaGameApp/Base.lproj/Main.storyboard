@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyNanjaMonjaGameApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-fV-7AS">
+                                <rect key="frame" x="320" y="722" width="128" height="89"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="64"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="woS-py-BA6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHU-rZ-79Q">
+                                <rect key="frame" x="320" y="213" width="128" height="89"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="64"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Smi-G3-3WI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3fg-3g-dlf">
+                                <rect key="frame" x="224" y="352" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="XG9-pV-aFZ"/>
+                                    <constraint firstAttribute="width" constant="320" id="lTr-iG-XNE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMw-s0-l2k">
+                                <rect key="frame" x="10" y="914" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jXu-90-diw"/>
+                                    <constraint firstAttribute="width" constant="100" id="z3E-ij-aDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0w-6J-hQO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kn0-ha-nc7">
+                                <rect key="frame" x="658" y="914" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CnY-x1-FBe"/>
+                                    <constraint firstAttribute="width" constant="100" id="Vct-2i-FRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rao-vU-HXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXt-gX-r1o">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SUB-rC-WsX"/>
+                                    <constraint firstAttribute="width" constant="100" id="cqb-eM-xeQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p60-Id-EAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLG-Y4-Q9o">
+                                <rect key="frame" x="10" y="462" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Lt2-gY-tZs"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zab-4e-NDe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Njq-0q-S6V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-FZ-fe2">
+                                <rect key="frame" x="658" y="10" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1GC-Yh-szN"/>
+                                    <constraint firstAttribute="width" constant="100" id="P9T-DT-CI0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGJ-48-PH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2Q-Ga-qoL">
+                                <rect key="frame" x="339.5" y="963" width="89" height="51"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="restart">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameRestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSd-tb-W3V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfE-Hi-pKq">
+                                <rect key="frame" x="658" y="462" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DAq-ol-AGb"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ntd-xN-488"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIn-PC-pDY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kn0-ha-nc7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="27l-AB-cDc"/>
+                            <constraint firstItem="eLG-Y4-Q9o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="63x-tl-iGw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2Q-Ga-qoL" secondAttribute="bottom" constant="10" id="7Jg-eq-Wwe"/>
+                            <constraint firstItem="Kn0-ha-nc7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="91A-vb-ENn"/>
+                            <constraint firstItem="3fg-3g-dlf" firstAttribute="top" secondItem="QHU-rZ-79Q" secondAttribute="bottom" constant="50" id="EtG-jB-mOl"/>
+                            <constraint firstItem="uXt-gX-r1o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KJn-VZ-WSN"/>
+                            <constraint firstItem="uXt-gX-r1o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="LF1-Kd-sZu"/>
+                            <constraint firstItem="3fg-3g-dlf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lc2-sf-sTk"/>
+                            <constraint firstItem="3fg-3g-dlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qeq-bc-V6y"/>
+                            <constraint firstItem="eLG-Y4-Q9o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="X9M-pw-a9W"/>
+                            <constraint firstItem="CMw-s0-l2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bgy-Ov-NE0"/>
+                            <constraint firstItem="dxO-FZ-fe2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dWf-n5-T56"/>
+                            <constraint firstItem="l8l-fV-7AS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e5a-rA-TXJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MfE-Hi-pKq" secondAttribute="trailing" constant="10" id="fQf-19-kRo"/>
+                            <constraint firstItem="QHU-rZ-79Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBV-7r-MmV"/>
+                            <constraint firstAttribute="trailing" secondItem="dxO-FZ-fe2" secondAttribute="trailing" constant="10" id="iZW-8S-47W"/>
+                            <constraint firstItem="MfE-Hi-pKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iau-z5-d2o"/>
+                            <constraint firstItem="B2Q-Ga-qoL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o87-E8-HSB"/>
+                            <constraint firstItem="l8l-fV-7AS" firstAttribute="top" secondItem="3fg-3g-dlf" secondAttribute="bottom" constant="50" id="rjV-Qb-4vE"/>
+                            <constraint firstItem="CMw-s0-l2k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="xSK-5a-dcn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewTest" destination="3fg-3g-dlf" id="Bba-Gt-dET"/>
+                        <outlet property="restartBtn" destination="B2Q-Ga-qoL" id="Ke1-WS-oXh"/>
+                        <outletCollection property="scoreBtn" destination="uXt-gX-r1o" collectionClass="NSMutableArray" id="7Cs-MB-LPR"/>
+                        <outletCollection property="scoreBtn" destination="dxO-FZ-fe2" collectionClass="NSMutableArray" id="Bbw-zR-bsA"/>
+                        <outletCollection property="scoreBtn" destination="CMw-s0-l2k" collectionClass="NSMutableArray" id="DEX-id-m68"/>
+                        <outletCollection property="scoreBtn" destination="Kn0-ha-nc7" collectionClass="NSMutableArray" id="PO1-8Q-cKs"/>
+                        <outletCollection property="changeImageBtn" destination="QHU-rZ-79Q" collectionClass="NSMutableArray" id="8CR-I7-Nzk"/>
+                        <outletCollection property="changeImageBtn" destination="l8l-fV-7AS" collectionClass="NSMutableArray" id="af8-aE-bQd"/>
+                        <outletCollection property="scoreBtn" destination="eLG-Y4-Q9o" collectionClass="NSMutableArray" id="LQ3-ss-G99"/>
+                        <outletCollection property="scoreBtn" destination="MfE-Hi-pKq" collectionClass="NSMutableArray" id="OFr-rM-Pa7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.53125" y="77.9296875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

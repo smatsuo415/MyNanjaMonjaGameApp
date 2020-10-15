@@ -1,0 +1,2 @@
+# MyNanjaMonjaGameApp
+なんじゃもんじゃゲームのパクリアプリ

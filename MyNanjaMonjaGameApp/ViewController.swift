@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var changeImageBtn: [UIButton]!
     @IBOutlet weak var restartBtn: UIButton!
     @IBOutlet weak var imageViewTest: UIImageView!
+    @IBOutlet weak var cardStock: UILabel!
+    @IBOutlet weak var cardRemain: UILabel!
     let imageMaxNum: Int = 12
     let imageOneNum: Int = 5
     let cardMaxNum: Int = 12 * 5
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
         
         // カードストック初期化
         stockCard = 0
+        cardStock.text = String(stockCard)
     }
     
     // カードめくり
@@ -59,6 +62,7 @@ class ViewController: UIViewController {
         else {
             
             cardNum -= 1
+            cardRemain.text = String(cardNum)
             
             print("[DEBUG] card: \(cardArray[cardNum])")
             
@@ -78,6 +82,7 @@ class ViewController: UIViewController {
             
             // カードストック
             stockCard += 1
+            cardStock.text = String(stockCard)
         }
     }
     
@@ -85,6 +90,7 @@ class ViewController: UIViewController {
     @IBAction func gameRestart(_ sender: Any) {
         imageViewTest.image = imageStart
         cardNum = cardMaxNum
+        cardRemain.text = String(cardNum)
         for index in 0..<cardFlag.count {
             cardFlag[index] = false
         }
@@ -99,6 +105,10 @@ class ViewController: UIViewController {
         for btn in changeImageBtn {
             btn.isEnabled = true
         }
+        
+        // カードストック初期化
+        stockCard = 0
+        cardStock.text = String(stockCard)
         
         // カードシャッフル
         cardArray.shuffle()
@@ -128,6 +138,12 @@ class ViewController: UIViewController {
         }
         // リスタートボタン丸め
         restartBtn.layer.cornerRadius = 20
+        // カードストックラベル丸め
+        cardStock.layer.cornerRadius = 50
+        cardStock.clipsToBounds = true
+        // 残りカードラベル丸め
+        cardRemain.layer.cornerRadius = 50
+        cardRemain.clipsToBounds = true
         
         // 画像登録
         imageStart = UIImage(named: "start")
@@ -169,6 +185,7 @@ class ViewController: UIViewController {
         
         imageViewTest.image = imageStart
         cardNum = cardMaxNum
+        cardRemain.text = String(cardNum)
     }
 }
 
